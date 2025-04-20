@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Online Course Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #010000;
+        }
+        .container {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header {
+        background: lightcyan;
+        color:bl;
+        padding: 10px 0;
+        text-align: center;
+     
+        /* border-radius: 12px;  */
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+
+    }
+
+    section {
+        margin: 20px 0;
+        background: #fff;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    section h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        color: darkblue;
+        font-size: 20px;
+    }
+    
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .team-member {
+        flex: 1 1 calc(33.333% - 20px);
+        background: #a9e3e9;
+        padding: 15px;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    
+
+    footer {
+        background:aqua;
+        color:black;
+        text-align: center;
+        padding: 10px 0;
+        /* position: fixed; */
+        width: 100%;
+        bottom: 0;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #333;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-size: 1.5em;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+    }
+    @media screen and (max-width:410px){
+        .container{
+            width:80px;
+            display: block;
+            margin: auto;
+            padding-top: 50px ;
+        }
+    }
+    .uiux{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 300px;
+                
+            }
+            .uiux img{
+                width: 400px;
+                border-radius: 20px;
+                opacity: 10;
+                border:  2px solid white;
+                margin-top: 25px;
+            }
+</style>
+
+</head>
+<body>
+    <header>
+        <b><h1>About Us</h1></b>
+    </header>
+    <div class="uiux">
+        <img src="q1.jpg" alt="">
+        <img src="q3.jpg" alt="">
+        <img src="q2.jpg" alt="">
+</div>
+    <div class="container">
+        <section>
+            <h1>Who We Are</h1>
+            <p>Welcome to Online Course Finder, your ultimate destination for discovering and comparing the best online courses available. Our platform is designed to help learners like you find the perfect course that fits your goals, interests, and schedule.</p>
+            <p>We are a team of dedicated professionals passionate about learning and committed to making online education accessible and effective for everyone. From technology enthusiasts to experienced educators, our diverse team brings a wealth of knowledge and expertise to the platform.</p>
+        </section>
+        <section>
+            <h1>Our Mission</h1>
+            <p>Our mission is to empower individuals worldwide by connecting them with top-quality learning opportunities. We believe that education should be accessible to everyone, and we are committed to making it easy for you to navigate the vast world of online learning.</p>
+            <p>Through our platform, we aim to break down barriers to education, offering personalized recommendations, detailed course reviews, and up-to-date information about the latest learning trends.</p>
+        </section>
+        <section>
+            <h1>Meet Our Team</h1>
+            <div class="team">
+                <div class="team-member">
+                    
+                    <h1>Priyanshi Patel</h1>
+                    <p>Team  Member 1</p>
+                </div>
+                <div class="team-member">
+                   
+                    <h1>Dhruvi Panchal</h1>
+                    <p>Team Member 2</p>
+                </div>
+                <div class="team-member">
+                   
+                    <h1>Bhavesh  Chauhan</h1>
+                    <p>Team Member 3</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Online Course Finder. All rights reserved.</p>
+    </footer>
+    <div class="back-to-top" id="backToTop">&uarr;</div><script>
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
